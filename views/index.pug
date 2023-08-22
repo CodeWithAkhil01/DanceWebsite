@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                img(src="/static/logo4.jpg")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") services]
+            li #[a(href="/") About]
+            li #[a(href="/") Contact]
+            li #[a(href="/") Class Info]
+
+    section#introsection 
+      div Welcome to harry dance academy
+      div.small eat sleep dance repeat
+
+    section#missionsection 
+        h2 our mission
+        div.card
+            h3 Dance perfection
+            div.card-box  
+                div.card-img 
+                    img(src="/static/logoo.jpeg")
+                div.card-content
+                    p this is the best dance academy of the universe
+        div.card
+            h3 Dance the way you like
+              div.card-box  
+                div.card-img 
+                    img(src="/static/logoo.jpeg")
+                div.card-content
+                    p this is the best dance academy of the universe
+        div.card
+            h3 Expert teaching
+              div.card-box  
+                div.card-img 
+                    img(src="/static/logoo.jpeg")
+                div.card-content
+                    p this is the best dance academy of the universe
+    section#sponsorsection 
+        h2 our sponsors
+        div#sponsors 
+            img(src="/static/logo4.jpg", alt="sponsor Image", class="spImage")
+            img(src="/static/logoo.jpeg", alt="sponsor Image", class="spImage")
+            img(src="/static/logo2.jpeg", alt="sponsor Image", class="spImage")
+            img(src="/static/logo3.jpg", alt="sponsor Image", class="spImage")
+
+    footer#footer
+        | copyright @ 2023 AkhilDanceAcademy.com  | All rights reserved
+        script 
+          include ../static/index.js

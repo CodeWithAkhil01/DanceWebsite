@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html
+html
+  head
+    title Harry dance academy
+    block scripts
+    block style
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                img(src="/static/logo4.jpg")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") services]
+            li #[a(href="/") About]
+            li #[a(href="/contact") Contact]
+            li #[a(href="/") Class Info]
+    block content
+    footer#footer
+        | copyright @ 2023 AkhilDanceAcademy.com  | All rights reserved
+      
